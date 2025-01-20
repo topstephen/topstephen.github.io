@@ -1,0 +1,546 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	<!--看板娘-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+	<script src="/live2d-widget/autoload.js"></script>
+
+
+	
+			    <title>
+    Stephen's blog
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="stephen blog java">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+    <!-- Single Links Page -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/demo.css">
+<style type="text/css">
+    .our-team {
+        padding: 30px 0 40px;
+        background: #f7f5ec;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .our-team .pic {
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        margin-bottom: 50px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .our-team .pic:before {
+        content: "";
+        width: 100%;
+        height: 0;
+        border-radius: 50%;
+        background: #000000;
+        position: absolute;
+        bottom: 135%;
+        right: 0;
+        left: 0;
+        opacity: 0.2;
+        transform: scale(3);
+        transition: all 0.3s linear 0s;
+    }
+
+    .our-team:hover .pic:before {
+        height: 100%;
+    }
+
+    .our-team .pic:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #000000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .our-team .pic img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: all 0.9s ease 0s;
+    }
+
+    .our-team:hover .pic img {
+        box-shadow: 0 0 0 14px #f7f5ec;
+        transform: scale(0.7);
+    }
+
+    .our-team .team-content {
+        margin-bottom: 30px;
+    }
+
+    .our-team .title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #4e5052;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+    }
+
+    .our-team .post {
+        display: block;
+        font-size: 15px;
+        color: #4e5052;
+        text-transform: capitalize;
+    }
+
+    .our-team .social {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background: #000;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+    }
+
+    .our-team:hover .social {
+        bottom: 0;
+    }
+
+    .our-team .social li {
+        display: inline-block;
+    }
+
+    .our-team .social li a {
+        display: block;
+        padding: 10px;
+        font-size: 17px;
+        color: #fff;
+        transition: all 0.3s ease 0s;
+    }
+
+    .our-team .social li a:hover {
+        color: #110;
+        background: #f7f5ec;
+    }
+
+    @media only screen and (max-width: 990px) {
+        .our-team {
+            margin-bottom: 30px;
+        }
+    }</style>
+
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">STEPHEN</a>
+</header>
+            <!-- Nav 导航条 start -->
+            <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/private/">private</a></li><li><a class="category-link" href="/categories/算法/">算法</a></li><li><a class="category-link" href="/categories/踩坑之路/">踩坑之路</a></li><li><a class="category-link" href="/categories/软件/">软件</a></li><li><a class="category-link" href="/categories/运维/">运维</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">归档</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="archive-link" href="/archives/2019/12/">December 2019</a></li><li><a class="archive-link" href="/archives/2019/11/">November 2019</a></li><li><a class="archive-link" href="/archives/2019/08/">August 2019</a></li><li><a class="archive-link" href="/archives/2019/05/">May 2019</a></li><li><a class="archive-link" href="/archives/2019/03/">March 2019</a></li><li><a class="archive-link" href="/archives/2018/09/">September 2018</a></li><li><a class="archive-link" href="/archives/2018/08/">August 2018</a></li><li><a class="archive-link" href="/archives/2018/04/">April 2018</a>
+	                    </li></ul>
+	        </li>
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/group/" title="常用工具">
+		                常用工具
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="http://47.98.141.122:9000/home.html" title="云文件">
+		                云文件
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="http://47.98.141.122:8083" title="书架">
+		                书架
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/topstephen" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=835226532&site=oicqzone.com&menu=yes" target="_blank" rel="noopener">
+                            <i class="icon fa fa-qq"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="envelope" href="mailto:tqgoblin@163.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://tqgoblin.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+                        <div id="main">
+            <!-- Main first s-->
+            <article id="me" class="panel">
+                <header style="color: #000000">
+                    <h1>Stephen Tang</h1>
+                    <p>Love and Share</p>
+                </header>
+                <a href="/about/index.html" class="jumplink pic">
+                    <span class="arrow icon fa-chevron-right"><span></span></span>
+                    <img src="/images/me.jpg" alt>
+                </a>
+            </article>
+            <!-- Main first e-->
+        </div>
+                    <div class="demo">
+                        <div class="container">
+                            <div class="row">
+                                
+                                    
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                                            <div class="our-team">
+                                                <div class="pic">
+                                                    <img src="https://smallpdf.com/favicon.png">
+                                                </div>
+                                                <div class="team-content">
+                                                    <h3 class="title">PDF转换器</h3>
+                                                    <span class="post">在线PDF转Word文件</span>
+                                                </div>
+                                                <ul class="social">
+                                                    
+                                                        <li><a href="https://smallpdf.com/cn/pdf-to-word" class="fa fa-link"></a></li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                                            <div class="our-team">
+                                                <div class="pic">
+                                                    <img src="https://tableconvert.com/static/images/favicon.png">
+                                                </div>
+                                                <div class="team-content">
+                                                    <h3 class="title">Markdown 表格生成</h3>
+                                                    <span class="post">在线PDF转Word文件</span>
+                                                </div>
+                                                <ul class="social">
+                                                    
+                                                        <li><a href="https://tableconvert.com/?output=text" class="fa fa-link"></a></li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                                            <div class="our-team">
+                                                <div class="pic">
+                                                    <img src="https://www.cnwebe.com/wp-content/uploads/2019/03/2019031805034126.ico">
+                                                </div>
+                                                <div class="team-content">
+                                                    <h3 class="title">Corn 表达式</h3>
+                                                    <span class="post">Corn 表达式</span>
+                                                </div>
+                                                <ul class="social">
+                                                    
+                                                        <li><a href="http://cron.qqe2.com/" class="fa fa-link"></a></li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                                            <div class="our-team">
+                                                <div class="pic">
+                                                    <img src="https://static.clewm.net/static/images/favicon.ico">
+                                                </div>
+                                                <div class="team-content">
+                                                    <h3 class="title">二维码生成器</h3>
+                                                    <span class="post">在线二维码生成器</span>
+                                                </div>
+                                                <ul class="social">
+                                                    
+                                                        <li><a href="https://cli.im/" class="fa fa-link"></a></li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                                            <div class="our-team">
+                                                <div class="pic">
+                                                    <img src>
+                                                </div>
+                                                <div class="team-content">
+                                                    <h3 class="title">yaml&lt;==&gt;properties互转</h3>
+                                                    <span class="post">yaml与properties配置文件相互转换</span>
+                                                </div>
+                                                <ul class="social">
+                                                    
+                                                        <li><a href="https://www.toyaml.com/index.html" class="fa fa-link"></a></li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                                            <div class="our-team">
+                                                <div class="pic">
+                                                    <img src="https://www.bootcdn.cn/assets/ico/favicon.ico?1566073794355">
+                                                </div>
+                                                <div class="team-content">
+                                                    <h3 class="title">BootCDN</h3>
+                                                    <span class="post">BootCDN</span>
+                                                </div>
+                                                <ul class="social">
+                                                    
+                                                        <li><a href="https://www.bootcdn.cn/" class="fa fa-link"></a></li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                                            <div class="our-team">
+                                                <div class="pic">
+                                                    <img src="https://hub.docker.com/favicon.ico">
+                                                </div>
+                                                <div class="team-content">
+                                                    <h3 class="title">Docker Hub</h3>
+                                                    <span class="post">Docker Hub</span>
+                                                </div>
+                                                <ul class="social">
+                                                    
+                                                        <li><a href="https://hub.docker.com/" class="fa fa-link"></a></li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                                            <div class="our-team">
+                                                <div class="pic">
+                                                    <img src="https://cn.vuejs.org/images/logo.png">
+                                                </div>
+                                                <div class="team-content">
+                                                    <h3 class="title">Vue 在线文档</h3>
+                                                    <span class="post">Vue 在线文档</span>
+                                                </div>
+                                                <ul class="social">
+                                                    
+                                                        <li><a href="https://cn.vuejs.org/v2/api/" class="fa fa-link"></a></li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                                            <div class="our-team">
+                                                <div class="pic">
+                                                    <img src="https://element.eleme.cn/favicon.ico">
+                                                </div>
+                                                <div class="team-content">
+                                                    <h3 class="title">ElementUI 在线文档</h3>
+                                                    <span class="post">ElementUI 在线文档</span>
+                                                </div>
+                                                <ul class="social">
+                                                    
+                                                        <li><a href="https://element.eleme.cn/#/zh-CN/component/quickstart" class="fa fa-link"></a></li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                                            <div class="our-team">
+                                                <div class="pic">
+                                                    <img src="http://www.addog.vip/resource/images_addog/favicon.ico">
+                                                </div>
+                                                <div class="team-content">
+                                                    <h3 class="title">Addog 百宝箱</h3>
+                                                    <span class="post">各种精品网站集合</span>
+                                                </div>
+                                                <ul class="social">
+                                                    
+                                                        <li><a href="http://www.addog.vip/?hmsr=7" class="fa fa-link"></a></li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Copyright 版权 start -->
+                    <div id="copyright">
+    
+        <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    
+    <!--百度统计-->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?3a65a5a0100f99fb7985fc450f4f4a60";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</div>
+    </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+
+ 	
+</html>
